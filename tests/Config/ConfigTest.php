@@ -41,6 +41,7 @@ class ConfigTest extends TestCase
      */
     public function testFitlerPath($path, $result)
     {
+        chdir(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . self::PATH);
         $this->assertEquals($result, $this->object->filterPath($path));
     }
 
@@ -50,7 +51,7 @@ class ConfigTest extends TestCase
             'trailing-win' => ['test\\', 'test' . DIRECTORY_SEPARATOR],
             'trailing-lin' => ['test/', 'test' . DIRECTORY_SEPARATOR],
             'trailing-none' => ['test', 'test' . DIRECTORY_SEPARATOR],
-            'mid-win' => ['test\\one', 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
+            'mid-win' => ["test\one", 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
             'mid-lin' => ['test/one', 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
         ];
     }
