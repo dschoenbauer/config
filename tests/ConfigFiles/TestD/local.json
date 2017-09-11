@@ -1,0 +1,14 @@
+{
+    "local": true,
+    "database": {
+        "host": "localhost",
+        "charset": "utf8"
+    },
+    "user": {
+        "active": true,
+        "name": {
+            "first": "John",
+            "last": "Doe"
+        }
+    }
+}

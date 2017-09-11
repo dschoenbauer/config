@@ -1,0 +1,10 @@
+{
+    "remote": true,
+    "database": {
+        "host": "devbox",
+        "err-mode":1
+    },
+    "user": {
+        "active": false
+    }
+}
