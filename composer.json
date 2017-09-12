@@ -8,10 +8,10 @@
         }
     ],
     "require":{
-        "dschoenbauer/dot-notation": "^1.0",
-        "satooshi/php-coveralls": "dev-master"
+        "dschoenbauer/dot-notation": "^1.0"
     },
     "require-dev": {
+        "satooshi/php-coveralls": "dev-master",
         "phpunit/phpunit": "5.7.14",
         "squizlabs/php_codesniffer": "^2.8",
         "sebastian/phpcpd": "^3.0",
