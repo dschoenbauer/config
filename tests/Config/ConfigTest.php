@@ -41,6 +41,7 @@ class ConfigTest extends TestCase
      */
     public function testFitlerPath($path, $result)
     {
+        chdir(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . self::PATH);
         $this->assertEquals($result, $this->object->filterPath($path));
     }
 
@@ -50,7 +51,7 @@ class ConfigTest extends TestCase
             'trailing-win' => ['test\\', 'test' . DIRECTORY_SEPARATOR],
             'trailing-lin' => ['test/', 'test' . DIRECTORY_SEPARATOR],
             'trailing-none' => ['test', 'test' . DIRECTORY_SEPARATOR],
-            'mid-win' => ['test\\one', 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
+            'mid-win' => ["test\one", 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
             'mid-lin' => ['test/one', 'test' . DIRECTORY_SEPARATOR . 'one' . DIRECTORY_SEPARATOR],
         ];
     }
@@ -120,10 +121,10 @@ class ConfigTest extends TestCase
     public function importDataDataProvider()
     {
         return [
-            'single file' => [['TestA\local.json'], ['local' => true]],
-            'multiple file' => [['TestB\local.json', 'TestB\remote.json',], ['local' => true, 'remote' => true]],
-            'competing files' => [['TestC\a\local.json', 'TestC\b\local.json',], ['local' => false]], //First file is true, second is false and wins with the value
-            'complicated data schema' => [['TestD\local.json', 'TestD\remote.json',],
+            'single file' => [['TestA' . DIRECTORY_SEPARATOR . 'local.json'], ['local' => true]],
+            'multiple file' => [['TestB' . DIRECTORY_SEPARATOR . 'local.json', 'TestB' . DIRECTORY_SEPARATOR . 'remote.json',], ['local' => true, 'remote' => true]],
+            'competing files' => [['TestC' . DIRECTORY_SEPARATOR . 'a' . DIRECTORY_SEPARATOR . 'local.json', 'TestC' . DIRECTORY_SEPARATOR . 'b' . DIRECTORY_SEPARATOR . 'local.json',], ['local' => false]], //First file is true, second is false and wins with the value
+            'complicated data schema' => [['TestD' . DIRECTORY_SEPARATOR . 'local.json', 'TestD' . DIRECTORY_SEPARATOR . 'remote.json',],
                 [
                     'local' => true,
                     'database' => [
