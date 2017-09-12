@@ -74,6 +74,6 @@ class Config
     
     public function filterPath($path)
     {
-        return str_replace('/', DIRECTORY_SEPARATOR, trim($path, '/\\') . DIRECTORY_SEPARATOR);
+        return str_replace(['/','\\'], DIRECTORY_SEPARATOR, trim($path, '\\/') . DIRECTORY_SEPARATOR);
     }
 }
