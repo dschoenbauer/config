@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DSchoenbauer\Config\Config</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-DSchoenbauer.html">
+						DSchoenbauer<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-DSchoenbauer.Config.html">
+						Config					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-DSchoenbauer.Config.Config.html">Config</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DSchoenbauer.Config.html" title="Summary of DSchoenbauer\Config"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Config</h1>
+
+
+	<div class="description">
+	<p>Loads a directory filled with JSON files allowing quick access to data</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DSchoenbauer.html">DSchoenbauer</a>\<a href="namespace-DSchoenbauer.Config.html">Config</a><br>
+		
+
+				<b>Author:</b>
+				David Schoenbauer<br>
+			<b>Located at</b> <a href="source-class-DSchoenbauer.Config.Config.html#6-115" title="Go to source code">Config/Config.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#17-26" title="Go to source code">__construct</a>( <span>string <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>absolute or relative directory path to a folder containing JSON files</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#28-37" title="Go to source code">get</a>( <span>string <var>$dotNotation</var></span>, <span>mixed <var>$defaultValue</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>retrieves a value from the amalgamation of all the JSON files data</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retrieves a value from the amalgamation of all the JSON files data</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dotNotation</var></dt>
+					<dd>a concatenated string of array keys</dd>
+					<dt><var>$defaultValue</var></dt>
+					<dd>value to be returned if the dot notation does not find data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFiles" id="_getFiles">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFiles">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#39-55" title="Go to source code">getFiles</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>retrieves an array of JSON files found in a directory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retrieves an array of JSON files found in a directory</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>absolute or relative directory path to a folder containing JSON files</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>retrieves an array of JSON files found in a directory
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="importData" id="_importData">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_importData">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#57-70" title="Go to source code">importData</a>( <span>array <var>$files</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>loads data into the object from a list of JSON files. If run multiple times the data will be continually added to</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>loads data into the object from a list of JSON files. If run multiple times the data will be continually added to</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$files</var></dt>
+					<dd>list of files to be loaded</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load" id="_load">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#72-81" title="Go to source code">load</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>loads JSON files from a directory path</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>loads JSON files from a directory path</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>absolute or relative directory path to a folder containing JSON files</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArrayDot" id="_getArrayDot">
+
+		<td class="attributes"><code>
+			 public 
+
+			DSchoenbauer\DotNotation\ArrayDotNotation
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArrayDot">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#83-93" title="Go to source code">getArrayDot</a>( )</code>
+
+		<div class="description short">
+			<p>Array dot notation allows for quick and easy access to a complicated data structure</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Array dot notation allows for quick and easy access to a complicated data structure</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					DSchoenbauer\DotNotation\ArrayDotNotation
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setArrayDot" id="_setArrayDot">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setArrayDot">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#95-104" title="Go to source code">setArrayDot</a>( <span>DSchoenbauer\DotNotation\ArrayDotNotation <var>$arrayDot</var></span> )</code>
+
+		<div class="description short">
+			<p>Array dot notation allows for quick and easy access to a complicated data structure</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Array dot notation allows for quick and easy access to a complicated data structure</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arrayDot</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterPath" id="_filterPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filterPath">#</a>
+		<code><a href="source-class-DSchoenbauer.Config.Config.html#106-114" title="Go to source code">filterPath</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Cleans a string so that it is truly a path relevant to the class.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Cleans a string so that it is truly a path relevant to the class.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>absolute or relative directory path to a folder containing JSON files</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="arrayDot" id="$arrayDot">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DSchoenbauer.Config.Config.html#14" title="Go to source code"><var>$arrayDot</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$arrayDot" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="path" id="$path">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DSchoenbauer.Config.Config.html#15" title="Go to source code"><var>$path</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$path" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
